@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHRONOS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/huongdan-thongtin.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbars">
+      <div class="navbar_content">
+        <div class="logo_img">
+          <a href="./index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+        </div>
+
+        <!-- navbar -->
+        <div class="d-flex">
+          <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mynavbar">
+                <span class="navbar-icon" style="outline: none;"><i class="fi fi-rr-menu-burger"></i></span>
+              </button>
+              <div class="offcanvas offcanvas-start" id="mynavbar">
+                <div class="offcanvas-header">
+                  <h1 class="offcanvas-title"></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./man_fashion.html">Thời trang nam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./woman_fashion.html">Thời trang nữ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./huongdan.html">Hướng dẫn</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="d-flex align-items-center">
+            <button class="btn-login btn__cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart"><i
+                class="fi fi-rr-shopping-cart"></i></button>
+            <button class="btn-login btn__login" type="button" data-bs-toggle="offcanvas" data-bs-target="#login"><i
+                class="fi fi-rr-user"></i></button>
+            <button class="btn-login btn__find" type="button" data-bs-toggle="offcanvas" data-bs-target="#find"><i
+                class="fi fi-rr-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- cart -->
+  <div class="offcanvas offcanvas-end" id="cart">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Giỏ hàng</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body ">
+      <div class="sp-demo d-flex ">
+        <img src="./images/download.jpg" alt="sp">
+        <div>
+          <p>Name/color/size</p>
+          <div class="d-flex justify-content-between">
+            <div>
+              <p>Số lượng : 1</p>
+              <p class="price">500.000d</p>
+            </div>
+            <div class="d-flex justify-content-end align-items-end">
+              <button class="cart-btn">mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-demo d-flex">
+        <img src="./images/download.jpg" alt="sp">
+        <div>
+          <p>Name/color/size</p>
+          <div class="d-flex justify-content-between">
+            <div>
+              <p>Số lượng : 1</p>
+              <p class="price">500.000d</p>
+            </div>
+            <div class="d-flex justify-content-end align-items-end">
+              <button class="cart-btn">mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-demo d-flex">
+        <img src="./images/download.jpg" alt="sp">
+        <div>
+          <p>Name/color/size</p>
+          <div class="d-flex justify-content-between">
+            <div>
+              <p>Số lượng : 1</p>
+              <p class="price">500.000d</p>
+            </div>
+            <div class="d-flex justify-content-end align-items-end">
+              <button class="cart-btn">mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart_footer">
+        <div class="d-flex justify-content-between">
+          <p>Tổng tiền:</p>
+          <p class="price">1.500.000d</p>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-secondary cart-btn" type="button">Thanh toán</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login -->
+  <div class="login">
+    <div class="offcanvas offcanvas-top" id="login">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title text-center">Login</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="find_container">
+          <form class="login-form" id="login-form">
+            <div class="login-element">
+              <label for="username">Tên đăng nhập:</label>
+              <input type="text" class="form-control input_username" id="username" name="username">
+              <span class="form-message"></span>
+            </div>
+            <div class="login-element">
+              <label for="pwd">Mật khẩu:</label>
+              <input type="password" class="form-control input_pass" id="pwd" name="pswd">
+              <span class="form-message"></span>
+            </div>
+            <div class="form-check login-element">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Ghi nhớ mật khẩu
+              </label>
+              <span class="form-message"></span>
+            </div>
+            <div class="d-grid gap-3 mt-4">
+              <button type="submit" class="btn btn-outline-success">Đăng nhập</button>
+              <p>Chưa có tài khoản?</p>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="offcanvas"
+                data-bs-target="#register">Đăng ký</button>
+              <div class="d-flex justify-content-center">
+                <a href="#"><i class="fi fi-brands-google"
+                    style="color: green; font-size: 20px; margin-right: 10px;"></i></a>
+                <a href="#"><i class="fi fi-brands-facebook" style="color: blue; font-size: 20px;"></i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- register -->
+    <div class="offcanvas offcanvas-top" id="register">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title text-center">Register</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="find_container">
+          <form class="login-form" id="register-form">
+            <div class="login-element">
+              <label for="username">Tên đăng nhập:</label>
+              <input type="text" class="form-control input_username" id="register-username" name="username">
+              <span class="form-message"></span>
+            </div>
+            <div class="login-element">
+              <label for="pwd">Mật khẩu:</label>
+              <input type="password" class="form-control input_pass" id="register-pwd" name="pswd">
+              <span class="form-message"></span>
+            </div>
+            <div class="login-element">
+              <label for="pwd">Nhập lại mật khẩu:</label>
+              <input type="password" class="form-control reinput_pass" id="register-repwd" name="pswd">
+              <span class="form-message"></span>
+            </div>
+            <div class="form-check login-element">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Ghi nhớ mật khẩu
+              </label>
+              <span class="form-message"></span>
+            </div>
+            <div class="d-grid gap-3 mt-4">
+              <button type="submit" class="btn btn-outline-success" style="margin-top: 20px;">Đăng ký</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Hướng Dẫn</h2>
+    <p>
+      Chào mừng bạn đến với web shop bán quần áo của chúng tôi! Để giúp bạn trải nghiệm mua sắm trực tuyến dễ dàng và
+      thuận tiện nhất. Vui lòng tham khảo thông tin dưới đây.
+    <h5>Nội dung:</h5>
+    <ul>
+      <li><a href="#section1" class="link">1. Giao nhận và thanh toán</a></li>
+      <li><a href="#section2" class="link">2. Hướng dẫn mua hàng</a></li>
+      <li><a href="#section3" class="link">3. Đổi trả và bảo hành</a></li>
+    </ul>
+    </p>
+  </div>
+  <div class="container" id="section1">
+    <h2>Giao nhận và thanh toán</h2>
+    <p> 1. Chọn Sản Phẩm và Thêm Vào Giỏ Hàng</p>
+    <P>Duyệt qua trang web của chúng tôi và chọn sản phẩm bạn muốn mua.
+      Nhấp vào nút "Thêm vào giỏ hàng" để đặt hàng sản phẩm. Bạn có thể tiếp tục mua sắm hoặc điều chỉnh số lượng trong
+      giỏ hàng của bạn trước khi tiến hành thanh toán.</P>
+    <P>2. Thanh Toán</P>
+
+    <p>
+      Sau khi bạn đã chọn tất cả sản phẩm mà bạn muốn mua, hãy nhấp vào biểu tượng giỏ hàng ở góc trên cùng bên phải và
+      nhấp vào nút "Thanh toán" của trang web để tiến hành thanh toán.
+      Bạn sẽ được đưa đến trang thanh toán, nơi bạn cung cấp thông tin thanh toán và địa chỉ giao hàng.
+      Chúng tôi chấp nhận các phương thức thanh toán như thẻ tín dụng, chuyển khoản ngân hàng, ví điện tử, và COD (thanh
+      toán khi nhận hàng).
+    </p>
+    <p>
+      3. Xác Nhận Đơn Hàng
+    </p>
+    <p>
+      Kiểm tra kỹ thông tin đơn hàng của bạn trước khi xác nhận thanh toán.
+      Sau khi xác nhận, bạn sẽ nhận được một email xác nhận đơn hàng chứa thông tin chi tiết về đơn hàng, bao gồm mã đơn
+      hàng để theo dõi.
+    </p>
+    <P>
+      4. Giao Hàng
+    </P>
+    <P>
+      Chúng tôi cam kết giao hàng nhanh chóng và an toàn đến địa chỉ của bạn.
+      Thời gian giao hàng có thể thay đổi tùy thuộc vào địa chỉ và phương thức giao hàng bạn chọn.
+    </P>
+    <P>
+      5. Theo Dõi Đơn Hàng
+    </P>
+    <P>
+      Bạn có thể theo dõi tình trạng đơn hàng bằng cách sử dụng mã đơn hàng trong email xác nhận đơn hàng hoặc trang web
+      của chúng tôi.
+      Chúng tôi cung cấp thông tin vận chuyển để bạn có thể biết chính xác khi nào sản phẩm sẽ đến.
+    </P>
+    <p>
+      6. Đổi/Trả Hàng
+    </p>
+    <p>
+      Chúng tôi cam kết đảm bảo chất lượng sản phẩm. Tuy nhiên, nếu bạn cần đổi hoặc trả hàng vì lý do nào đó, vui lòng
+      tham khảo chính sách đổi/trả hàng trên trang web của chúng tôi.
+    </p>
+    <p>
+      7. Liên Hệ Với Chúng Tôi
+    </p>
+    <p>
+      Nếu bạn có bất kỳ câu hỏi hoặc cần hỗ trợ thêm, xin vui lòng liên hệ với chúng tôi thông qua số điện thoại hoặc
+      email có sẵn trên trang web. Đội ngũ hỗ trợ của chúng tôi sẽ rất hân hạnh được phục vụ bạn.
+    </p>
+  </div>
+  <div class="container" id="section2">
+    <h2>Hướng dẫn mua hàng</h2>
+    <p>1. Tìm Sản Phẩm</p>
+    <p>
+      Sử dụng thanh công cụ tìm kiếm hoặc chọn danh mục sản phẩm để duyệt qua các loại quần áo chúng tôi cung cấp.
+      Sử dụng bộ lọc để thu gọn kết quả tìm kiếm theo màu sắc, kích thước, giá cả, và thương hiệu.
+    </p>
+    <p>
+      2. Xem Chi Tiết Sản Phẩm và chọn kích thước màu sắc
+    </p>
+    <P>
+      Nhấn vào sản phẩm để xem thông tin chi tiết, mô tả sản phẩm, hình ảnh, giá cả và kích thước có sẵn.
+      Đảm bảo đọc kỹ mô tả sản phẩm để đảm bảo rằng nó đáp ứng nhu cầu của bạn.<br>
+      Chọn kích thước và màu sắc mong muốn trước khi thêm sản phẩm vào giỏ hàng.
+    </P>
+    <p>
+      3. Thêm Vào Giỏ Hàng:
+    </p>
+    <p>
+      Nhấn vào nút "Thêm vào giỏ hàng" để đưa sản phẩm vào giỏ hàng.
+      Bạn có thể xem giỏ hàng bằng cách nhấn vào biểu tượng giỏ hàng ở góc trên cùng bên phải.
+    </p>
+    <p>
+      4. Kiểm Tra Giỏ Hàng và Đặt Hàng
+    </p>
+    <p>
+      Trong giỏ hàng, bạn có thể kiểm tra tất cả sản phẩm bạn đã chọn, chỉnh sửa số lượng, hoặc loại bỏ sản phẩm nếu cần
+      thiết.
+      <br>
+      Khi bạn đã kiểm tra giỏ hàng và chắc chắn về các sản phẩm bạn muốn mua, nhấn vào nút "Thanh toán" hoặc "Đặt hàng".
+    </p>
+    <p>
+      5. Điền Thông Tin Giao Hàng
+    </p>
+    <p>
+      Nhập thông tin giao hàng, bao gồm tên, địa chỉ, số điện thoại và địa chỉ email của bạn.
+    </p>
+    <p>
+      6. Chọn Phương Thức Thanh Toán và Xác Nhận Đặt Hàng
+    </p>
+    <p>
+      Chọn phương thức thanh toán mong muốn, như thanh toán bằng thẻ tín dụng, chuyển khoản ngân hàng, hoặc ví điện tử.
+      Xem lại đơn hàng của bạn, đảm bảo thông tin đúng đắn và nhấn vào nút "Xác nhận đặt hàng".
+    </p>
+    <p>
+      7. Xác Nhận và Theo Dõi Đơn Hàng:
+    </p>
+    <p>
+      Sau khi xác nhận đơn hàng, bạn sẽ nhận được email xác nhận với thông tin chi tiết về đơn hàng của bạn.
+
+      Bạn có thể theo dõi trạng thái đơn hàng của mình bằng cách sử dụng mã theo dõi đơn hàng (nếu có) hoặc liên hệ với
+      chúng tôi qua thông tin liên hệ.
+    </p>
+    <p>
+      8. Nhận Hàng
+    </p>
+    <p>
+      Chờ đợi sản phẩm được giao đến địa chỉ bạn đã cung cấp trong đơn hàng.
+    </p>
+    <p>
+      Cảm ơn bạn đã mua sắm tại web shop của chúng tôi. Nếu bạn có bất kì câu hỏi hoặc cần hỗ trợ nào, vui lòng liên hệ
+      với chúng tôi qua số điện thoại hoặc email ở trang liên hệ. Chúng tôi rất vui lòng được phục vụ bạn!
+    </p>
+  </div>
+  <div class="container" id="section3">
+    <h2>Đổi trả và bảo hành</h2>
+    <p>
+      1. Thời gian đổi trả và bảo hành
+    </p>
+    <p>
+      Đổi trả: Quý khách có quyền đổi trả sản phẩm trong vòng 30 ngày kể từ ngày mua hàng. Sản phẩm cần được giữ nguyên
+      tình trạng ban đầu, còn mới, không bị hỏng hoặc sử dụng.
+      <br>
+      Bảo hành: Sản phẩm được bảo hành trong vòng 12 tháng kể từ ngày mua hàng. Bảo hành bao gồm sửa chữa miễn phí hoặc
+      đổi sản phẩm mới nếu sản phẩm có lỗi do sản xuất.
+    </p>
+    <p>
+      2. Các bước chi tiết
+    </p>
+    <p>
+      - Bước 1: Liên hệ với chúng tôi
+    </p>
+    <p>
+      Nếu quý khách muốn đổi trả hoặc sử dụng chính sách bảo hành, vui lòng liên hệ với chúng tôi qua số điện thoại
+      19001001 hoặc Email abc@gmail.com. Chúng tôi sẽ hỗ trợ bạn trong việc xử lý yêu cầu của mình.
+    </p>
+    <P>
+      - Bước 2: Chuẩn bị sản phẩm
+    </P>
+    <p>
+      Đối với đổi trả: Vui lòng đảm bảo rằng sản phẩm còn mới và nguyên tình trạng ban đầu, cùng với hóa đơn mua hàng.
+      <br>
+      Đối với bảo hành: Chuẩn bị sản phẩm bị lỗi cùng với hóa đơn mua hàng.
+    </p>
+    <p>
+      - Bước 3: Gửi sản phẩm về chúng tôi
+    </p>
+    <p>
+      Chúng tôi sẽ cung cấp địa chỉ hoặc phương thức trả sản phẩm. Quý khách sẽ phải tự trả phí gửi sản phẩm về chúng
+      tôi. Chúng tôi sẽ kiểm tra sản phẩm và xử lý yêu cầu của quý khách trong thời gian ngắn nhất.
+    </p>
+    <p>
+      - Bước 4: Đổi trả hoặc sửa chữa
+    </p>
+    <p>
+      Đối với đổi trả: Sau khi kiểm tra sản phẩm, chúng tôi sẽ đổi sản phẩm hoặc hoàn tiền theo yêu cầu của quý khách.
+      <br>
+      Đối với bảo hành: Nếu sản phẩm có lỗi do sản xuất, chúng tôi sẽ sửa chữa hoặc đổi sản phẩm mới miễn phí.
+    </p>
+    <p>
+      3. Thông tin quý khách cần biết
+    </p>
+    <p>
+      Chúng tôi không áp dụng chính sách đổi trả và bảo hành cho các trường hợp sản phẩm bị hỏng do sử dụng sai cách
+      hoặc có dấu hiệu rỉ sét, rách hoặc sứt mẻ.
+
+      Hãy đảm bảo gửi sản phẩm đúng cách để tránh hỏng hóc trong quá trình vận chuyển.
+
+      <br>Chúng tôi luôn lắng nghe và sẵn sàng hỗ trợ bạn trong quá trình đổi trả và bảo hành sản phẩm. Chất lượng dịch
+      vụ của chúng tôi luôn đặt lên hàng đầu.
+    </p>
+    <p>
+      Nếu bạn có bất kỳ câu hỏi hoặc yêu cầu nào, hãy liên hệ với chúng tôi để được tư vấn thêm.
+
+      Xin chân thành cảm ơn bạn đã lựa chọn [Tên Cửa Hàng Quần Áo của Bạn] là nơi mua sắm quần áo trực tuyến. Chúng tôi
+      hy vọng bạn sẽ có trải nghiệm mua sắm tuyệt vời và hài lòng với sản phẩm của chúng tôi.
+    </p>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_content">
+      <img src="./images/logo_w.png" alt="Logo" class="logo">
+      <div class="footer_nav">
+        <div class="footer_part">
+          <h5 class="contact">Cửa hàng</h5>
+          <div class="footer__nav">
+            <p><a href="#">Giới thiệu về cửa hàng</a></p>
+            <p><a href="#">Tuyển dụng</a></p>
+            <p><a href="#">Hợp tác</a></p>
+            <p><a href="#">Liên hệ</a></p>
+          </div>
+        </div>
+        <div class="footer_part">
+          <h5 class="contact">Chính sách khách hàng</h5>
+          <div class="footer__nav">
+            <p><a href="#">Chính sách khách hàng thân thiết</a></p>
+            <p><a href="#">Chính sách đổi trả</a></p>
+            <p><a href="#">Chính sách bảo hành</a></p>
+            <p><a href="#">Chính sách bảo mật</a></p>
+          </div>
+        </div>
+        <div class="footer_part">
+          <h5 class="contact">Kết nối với chúng tôi</h5>
+          <p class="contact">Email: abc@gmail.com</p>
+          <p class="contact">Phone: 19001001</p>
+          <div class="contact_icon">
+            <a href="#"><i class="fi fi-brands-facebook"></i></a>
+            <a href="#"><i class="fi fi-brands-twitter"></i></a>
+            <a href="#"><i class="fi fi-brands-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center contact coppyright" style="margin-bottom: 0px;">&copy Copyright by Hius</p>
+    </div>
+  </footer>
+  <script src="./javascript/main.js"></script>
+  <script>
+    Validator({
+      form: '#login-form',
+      rules: [
+        Validator.isRequiredUsername('#username'),
+        Validator.isRequiredPass('#pwd'),
+      ]
+    });
+    Validator({
+      form: '#register-form',
+      rules: [
+        Validator.isRequiredUsername('#register-username'),
+        Validator.minLength('#register-pwd', 8),
+        Validator.isComfirm('#register-repwd', function () {
+          return document.querySelector('#register-form').value;
+        }),
+      ]
+    });
+
+  </script>
+</body>
+
+</html>

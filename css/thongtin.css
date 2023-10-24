@@ -1,0 +1,138 @@
+
+.under-nav p::before{
+    content: '/';
+    margin:0 10px ;
+}
+
+.img-product img{
+    
+    height: 550px;
+}
+
+del{
+    margin-left: 10px;
+}
+
+.content-product{
+    padding: 0 10px;
+}
+
+/* input số lượng */
+.qty{
+    text-align: center;
+    margin-left: 30px;
+    width: 70px;
+    height: 50px;
+}
+
+/* input size  */
+.select-size{
+    margin-top: 30px;
+}
+select{
+    width: 70px;
+    text-align: center;
+    margin-left: 60px;
+}
+
+/* button mua hàng */
+.button-buy{
+    width: 160px;
+    height: 40px;
+    background-color: brown;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+/* liên quan */
+.lien-quan>.tieu-de{
+    padding-top: 5px;
+    border: 1px solid gray;
+}
+.star{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    height: 50px;
+}
+.product-relate{
+    margin: 15px 0;
+    border: 1px solid gray;
+    height: 200px;
+    padding-top: 10px;
+}
+.product-relate p{
+    color: red;
+}
+.info-product-relate{
+    text-align: center;
+}
+
+.button-relate{
+    width: 100px;
+    height: 40px;
+    background-color: brown;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.tieu-de , .product-relate{
+    background-color: #E9ECEF;
+}
+
+/* mô tả sản phẩm */
+.title-content{
+    border: 1px dashed #E9ECEF;
+    margin-top: 20px;
+
+}
+.sp-ban-chay{
+    height: 500px;
+    align-items: center;
+    text-align: center;
+   border: 1px solid black;
+   padding: 0 20px;
+   margin: 0 5px;
+  
+}
+
+.sp-ban-chay img{
+    margin: 15px 0;
+     height: 300px;
+}
+.gia-ban-chay{
+    color: red;
+}
+@media (max-width:992px)and (min-width: 768px){
+    .info-product_product-relate{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-relate{
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .list-ban-chay{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:767px) {
+    .info-product_product-relate{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-relate{
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .list-ban-chay{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

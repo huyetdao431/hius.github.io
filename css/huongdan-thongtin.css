@@ -1,0 +1,42 @@
+/*content*/
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #555;
+    line-height: 1.7;
+}
+.pd-name {
+    margin: 50px;
+}
+#qty {
+    width: 100px;
+}
+.product-description {
+    display: flex;
+}
+.img-fluid {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}
+.container {
+    max-width: 70%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+}
+h4 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.link:hover {
+    text-decoration: underline;
+}

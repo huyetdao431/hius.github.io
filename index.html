@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHRONOS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main-content.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbars">
+      <div class="navbar_content">
+        <div class="logo_img">
+          <a href="./index.html"><img src="./images/logo.png" alt="logo" class="logo"></a>
+        </div>
+
+        <!-- navbar -->
+        <div class="d-flex">
+          <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mynavbar">
+                <span class="navbar-icon" style="outline: none;"><i class="fi fi-rr-menu-burger"></i></span>
+              </button>
+              <div class="offcanvas offcanvas-start" id="mynavbar">
+                <div class="offcanvas-header">
+                  <h1 class="offcanvas-title"></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./man_fashion.html">Thời trang nam</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./woman_fashion.html">Thời trang nữ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./huongdan.html">Hướng dẫn</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="d-flex align-items-center">
+            <button class="btn-login btn__cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart"><i
+                class="fi fi-rr-shopping-cart"></i></button>
+            <button class="btn-login btn__login" type="button" data-bs-toggle="offcanvas" data-bs-target="#login"><i
+                class="fi fi-rr-user"></i></button>
+            <button class="btn-login btn__find" type="button" data-bs-toggle="offcanvas" data-bs-target="#find"><i
+                class="fi fi-rr-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- cart -->
+  <div class="offcanvas offcanvas-end" id="cart">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Giỏ hàng</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body ">
+      <div class="sp-demo d-flex ">
+        <img src="./images/download.jpg" alt="sp">
+        <div>
+          <p>Name/color/size</p>
+          <div class="d-flex justify-content-between">
+            <div>
+              <p>Số lượng : 1</p>
+              <p class="price">500.000d</p>
+            </div>
+            <div class="d-flex justify-content-end align-items-end">
+              <button class="cart-btn">mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-demo d-flex">
+        <img src="./images/download.jpg" alt="sp">
+        <div>
+          <p>Name/color/size</p>
+          <div class="d-flex justify-content-between">
+            <div>
+              <p>Số lượng : 1</p>
+              <p class="price">500.000d</p>
+            </div>
+            <div class="d-flex justify-content-end align-items-end">
+              <button class="cart-btn">mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sp-demo d-flex">
+        <img src="./images/download.jpg" alt="sp">
+        <div>
+          <p>Name/color/size</p>
+          <div class="d-flex justify-content-between">
+            <div>
+              <p>Số lượng : 1</p>
+              <p class="price">500.000d</p>
+            </div>
+            <div class="d-flex justify-content-end align-items-end">
+              <button class="cart-btn">mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart_footer">
+        <div class="d-flex justify-content-between">
+          <p>Tổng tiền:</p>
+          <p class="price">1.500.000d</p>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-secondary cart-btn" type="button">Thanh toán</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login -->
+  <div class="login">
+    <div class="offcanvas offcanvas-top" id="login">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title text-center">Login</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="find_container">
+          <form class="login-form" id="login-form">
+            <div class="login-element">
+              <label for="username">Tên đăng nhập:</label>
+              <input type="text" class="form-control input_username" id="username" name="username">
+              <span class="form-message"></span>
+            </div>
+            <div class="login-element">
+              <label for="pwd">Mật khẩu:</label>
+              <input type="password" class="form-control input_pass" id="pwd" name="pswd">
+              <span class="form-message"></span>
+            </div>
+            <div class="form-check login-element">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Ghi nhớ mật khẩu
+              </label>
+              <span class="form-message"></span>
+            </div>
+            <div class="d-grid gap-3 mt-4">
+              <button type="submit" class="btn btn-outline-success">Đăng nhập</button>
+              <p>Chưa có tài khoản?</p>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="offcanvas"
+                data-bs-target="#register">Đăng ký</button>
+              <div class="d-flex justify-content-center">
+                <a href="#"><i class="fi fi-brands-google"
+                    style="color: green; font-size: 20px; margin-right: 10px;"></i></a>
+                <a href="#"><i class="fi fi-brands-facebook" style="color: blue; font-size: 20px;"></i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- register -->
+    <div class="offcanvas offcanvas-top" id="register">
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title text-center">Register</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="find_container">
+          <form class="login-form" id="register-form">
+            <div class="login-element">
+              <label for="username">Tên đăng nhập:</label>
+              <input type="text" class="form-control input_username" id="register-username" name="username">
+              <span class="form-message"></span>
+            </div>
+            <div class="login-element">
+              <label for="pwd">Mật khẩu:</label>
+              <input type="password" class="form-control input_pass" id="register-pwd" name="pswd">
+              <span class="form-message"></span>
+            </div>
+            <div class="login-element">
+              <label for="pwd">Nhập lại mật khẩu:</label>
+              <input type="password" class="form-control reinput_pass" id="register-repwd" name="pswd">
+              <span class="form-message"></span>
+            </div>
+            <div class="form-check login-element">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Ghi nhớ mật khẩu
+              </label>
+              <span class="form-message"></span>
+            </div>
+            <div class="d-grid gap-3 mt-4">
+              <button type="submit" class="btn btn-outline-success" style="margin-top: 20px;">Đăng ký</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- find -->
+  <div class="offcanvas offcanvas-top" id="find">
+    <div class="offcanvas-header">
+      <h2></h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <ul class="find_element ">
+          <li><a href="#" style="text-transform: uppercase; font-size: 1.3em;">Nam</a></li>
+          <li><a href="#" style="text-transform: uppercase; font-size: 1.3em;">Nữ</a></li>
+        </ul>
+      </div>
+      <form class="d-flex" style="width: 60%; margin: auto;">
+        <input class="find_input" type="text" placeholder="Tim kiem">
+        <button class="find_btn" type="button"><i class="fi fi-rr-search"></i></button>
+      </form>
+      <div class="find_content">
+        <h4 style="text-align: center;">Được tìm kiếm nhiều</h4>
+        <div>
+          <ul class="find_element">
+            <li><a href="#">Áo khoác nam</a></li>
+            <li><a href="#">Váy</a></li>
+            <li><a href="#">Sơ mi</a></li>
+            <li><a href="#">Quần jean</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main content -->
+  <div class="container-fluid main-content">
+    <div id="main-content" class="carousel slide container" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#main-content" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#main-content" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#main-content" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#main-content" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/set-quan-ao-cong-sox750x750x4.webp" alt="Los Angeles" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/set-quan-ao-cong-sox750x750x4.webp" alt="Chicago" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/set-quan-ao-cong-sox750x750x4.webp" alt="New York" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/set-quan-ao-cong-sox750x750x4.webp" alt="New York" class="d-block w-100">
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="container-fruid fashion">
+      <div class="row ">
+        <div class="man_fashion col-md-6 col-sm-6 ">
+          <img src="./images/Thoi-trang-nam.jpg" alt="#" class="d-block w-100">
+          <a href="#" class="fashion_btn">Xem ngay</a>
+        </div>
+        <div class="woman_fashion col-md-6 col-sm-6">
+          <img src="./images/Thoi-trang-nu.jpg" alt="#" class="d-block w-100">
+          <a href="#" class="fashion_btn">Xem ngay</a>
+        </div>
+      </div>
+    </div>
+    <!--trending -->
+    <div class="container_fruid">
+      <h2 class="title">Trending</h2>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-6 item">
+          <a href="./thongtin.html"><img src="./images/sp-1-1.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Quần ống rộng nữ</a></p>
+            <p class="text-center">
+              <span class="price">
+                <ins>320.000đ</ins>
+              </span></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 item">
+          <a href="./thongtin.html"><img src="./images/sp-3.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Quần short nam</a></p>
+            <p class="text-center">
+              <span class="price">
+                <ins>99.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 item">
+          <a href="./thongtin.html"><img src="./images/sp-1-5.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Set áo + váy</a></p>
+            <p class="text-center">
+              <span class="price">
+                <ins>199.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 item">
+          <a href="./thongtin.html"><img src="./images/sp-1-3.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Quần ống rộng nữ</a></p>
+            <p class="text-center">
+              <span class="price">
+                <ins>205.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 item">
+          <a href="./thongtin.html"><img src="./images/sp-1.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Áo khoác gió</a></p>
+            <p class="text-center">
+              <span class="price">
+                <ins>200.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 item">
+          <a href="./thongtin.html"><img src="./images/sp-5.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Áo khoác bò nam</a></p>
+            <p class="text-center">
+              <span class="price">
+                <ins>349.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="more_button">
+        <button type="button" class="more_button">Xem thêm</button>
+      </div>
+    </div>
+    <!-- collection -->
+    <div class="container-fluid">
+      <h2 class="title">Collection</h2>
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <a href="#"><img src="./images/collection-1.jpg" alt="man collection" class="collection_img"></a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="#"><img src="./images/collection-2.jpg" alt="man collection" class="collection_img"></a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="#"><img src="./images/collection-4.jpg" alt="man collection" class="collection_img"></a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="#"><img src="./images/collection-5.jpg" alt="man collection" class="collection_img"></a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="#"><img src="./images/collection-1-1.jpg" alt="man collection" class="collection_img"></a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="#"><img src="./images/collection-1-3.jpg" alt="man collection" class="collection_img"></a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="#"><img src="./images/collection-1-4.jpg" alt="man collection" class="collection_img"></a>
+        </div>
+        <div class="col-md-3 col-6">
+          <a href="#"><img src="./images/collection-1-5.jpg" alt="man collection" class="collection_img"></a>
+        </div>
+      </div>
+    </div>
+    <!-- Sale -->
+    <div class="container_fruid sale">
+      <h2 class="title">Sale up to 50%</h2>
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6 item col-6">
+          <a href="./thongtin.html"><img src="./images/sp-1-2.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Váy</a></p>
+            <p class="text-center">
+              <span class="price">
+                <del>320.000đ</del>
+                <ins>160.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 item col-6">
+          <a href="./thongtin.html"><img src="./images/sp-2.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Quần jean nam</a></p>
+            <p class="text-center">
+              <span class="price">
+                <del>320.000đ</del>
+                <ins>160.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 item col-6">
+          <a href="./thongtin.html"><img src="./images/sp-4.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Áo hoodee nam</a></p>
+            <p class="text-center">
+              <span class="price">
+                <del>320.000đ</del>
+                <ins>160.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 item col-6">
+          <a href="./thongtin.html"><img src="./images/sp-1-4.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Áo phông nữ</a></p>
+            <p class="text-center">
+              <span class="price">
+                <del>320.000đ</del>
+                <ins>160.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 item col-6">
+          <a href="./thongtin.html"><img src="./images/sp-6.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Áo blazer nam</a></p>
+            <p class="text-center">
+              <span class="price">
+                <del>320.000đ</del>
+                <ins>160.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 item col-6">
+          <a href="./thongtin.html"><img src="./images/sp-1-6.jpg" alt="Thời trang nam" class="d-block w-100"></a>
+          <div class="img-thumbnail">
+            <p class="text-center"><a href="./thongtin.html">Quần short nữ</a></p>
+            <p class="text-center">
+              <span class="price">
+                <del>320.000đ</del>
+                <ins>160.000đ</ins>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="more_button">
+        <button type="button" class="more_button">Xem thêm</button>
+      </div>
+    </div>
+  </div>
+  <div style="margin: 20px auto 50px auto; height: 2px; width: 60%; background-color: black;"></div>
+  <div>
+    <h2 style="text-transform: uppercase; text-align: center;">Bộ sưu tập 2023</h2>
+    <div style="height: 2px; width: 30%; margin: auto; background-color: black;"></div>
+    <h1 style="font-size:50px; text-transform: uppercase; text-align: center; margin-top: 20px;">Miễn phí vận chuyển
+    </h1>
+    <p style="text-transform: uppercase; text-align: center;">cho đơn hàng từ 500k</p>
+    <div style="height: 2px; width: 30%; margin: auto; background-color: black;"></div>
+    <p style="text-transform: uppercase; text-align: center; margin: 10px 0 30px 0;">chương trình này được áp dụng cho
+      mọi mặt hàng của chúng tôi</p>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer_content">
+      <img src="./images/logo_w.png" alt="Logo" class="logo">
+      <div class="footer_nav">
+        <div class="footer_part">
+          <h5 class="contact">Cửa hàng</h5>
+          <div class="footer__nav">
+            <p><a href="#">Giới thiệu về cửa hàng</a></p>
+            <p><a href="#">Tuyển dụng</a></p>
+            <p><a href="#">Hợp tác</a></p>
+            <p><a href="#">Liên hệ</a></p>
+          </div>
+        </div>
+        <div class="footer_part">
+          <h5 class="contact">Chính sách khách hàng</h5>
+          <div class="footer__nav">
+            <p><a href="#">Chính sách khách hàng thân thiết</a></p>
+            <p><a href="#">Chính sách đổi trả</a></p>
+            <p><a href="#">Chính sách bảo hành</a></p>
+            <p><a href="#">Chính sách bảo mật</a></p>
+          </div>
+        </div>
+        <div class="footer_part">
+          <h5 class="contact">Kết nối với chúng tôi</h5>
+          <p class="contact">Email: abc@gmail.com</p>
+          <p class="contact">Phone: 19001001</p>
+          <div class="contact_icon">
+            <a href="#"><i class="fi fi-brands-facebook"></i></a>
+            <a href="#"><i class="fi fi-brands-twitter"></i></a>
+            <a href="#"><i class="fi fi-brands-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center contact coppyright" style="margin-bottom: 0px;">&copy Copyright by Hius</p>
+    </div>
+  </footer>
+  <script src="./javascript/main.js"></script>
+  <script>
+    Validator({
+      form: '#login-form',
+      rules: [
+        Validator.isRequiredUsername('#username'),
+        Validator.isRequiredPass('#pwd'),
+      ]
+    });
+    Validator({
+      form: '#register-form',
+      rules: [
+        Validator.isRequiredUsername('#register-username'),
+        Validator.minLength('#register-pwd', 8),
+        Validator.isComfirm('#register-repwd', function () {
+          return document.querySelector('#register-form').value;
+        }),
+      ]
+    });
+
+  </script>
+</body>
+
+</html>
