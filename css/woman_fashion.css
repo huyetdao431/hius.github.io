@@ -3,7 +3,7 @@
     right: 0;
     left: 0;
     top: 0;
-    background-color: #834453;
+    background-color: #F5F5F5;
     z-index: 11;
     display: flex;
     height: 64px;
@@ -11,7 +11,7 @@
 .header__background{
     width: 100%;
     height: 64px;
-    background-color: #834453;
+    background-color: #F5F5F5;
     position: fixed;
     top: 0;left: 0;right: 0;bottom: 0;
     z-index: 10;
@@ -266,7 +266,7 @@
 }
 .header__navbar__item__link{
     display: flex;
-    color: white;
+    color: black;
     align-items: center;
 }
 .header__navbar__item__link i{
@@ -293,7 +293,7 @@
     transition: all ease 0.1s;
 }
 .header__navbar__item:hover .header__navbar__item__wrapper{
-    background-color: #cc2f40;
+    color: red;
 }
 .header__navbar__item__wrapper .header__navbar__item__link .header__navbar__item__link__icon__wrapper i{
     margin: 0;
@@ -1125,13 +1125,16 @@
 
 /* Footer Information */
 .footer__information__background{
-    background-color: #f8f8f8;
+    background-image: url("../images/foot-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .footer__information{
     padding: 10px 0;
+    background-color: rgb(0, 0, 0, 0.7);
 }
 .footer__information__row{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .footer__information__text__1st{
     padding-top: 10px;
@@ -1139,12 +1142,12 @@
 }
 .footer__information__text__1st span{
     font-size: 0.5rem;
-    color: #444;
+    color: white;
     font-weight: 700;
 }
 .footer__information__text__1st__a{
     font-size: 0.6rem;
-    color: #333;
+    color: white;
     font-weight: 700;
 }
 .footer__information__text__1st__a:hover,
@@ -1160,7 +1163,7 @@
 .footer__information__text__3rd span,
 .footer__information__text__3rd__a{
     font-size: 0.6rem;
-    color: #333;
+    color: white;
     font-weight: 700;
     opacity: 0.8;
 }
@@ -1171,7 +1174,7 @@
 }
 .footer__information__row__last p{
     font-size: 0.6rem;
-    color: #333;
+    color: white;
     font-weight: 700;
     opacity: 0.8;
 }
@@ -1192,6 +1195,7 @@
     height: 100%;
     object-fit:  cover;
 }
+
 /* Footer Information */
 
 
